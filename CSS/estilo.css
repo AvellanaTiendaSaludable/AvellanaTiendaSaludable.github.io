@@ -1,0 +1,282 @@
+body{
+	background-image:url("../imagenes/fondo verde.jpg");
+	font-family: "LEAFLETS";
+	color: #455827;
+	font-size: 100px;
+	}
+	
+p{
+		text-align:justify;
+		font-size: 42px;
+		color:#455827;          
+		font-family: "pfont";
+	}
+	
+hr{
+	border:1px solid #1E4E20;
+	border-radius: 3px;
+	}
+	
+table, tr, td{
+	border:2px solid;
+	border-color: #455827;
+	background-color:#B7CCB2 ;
+	}
+	
+th{
+	background-color:#B7CCB2	
+	}
+	
+ul{
+	list-style-type: square;
+	list-style-position: inside;
+	text-align: center; 
+	font-size: 30px;
+	color:#1E4E20;          
+	font-family: "pfont";
+	font-weight: bold;
+	}
+	
+ol{
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	text-align: center; 
+	font-size: 30px;
+	color:#1E4E20;          
+	font-family: "pfont";
+	font-weight: bold;
+	}
+	
+.pie{
+	text-align: center; 
+	font-size: 20px;
+	color: #455827; 
+	font-family: "Letter Gothic Std";
+	font-weight: italic;
+	}
+	
+.titulo{
+	font-family: "no";
+	color: #1E4E20;
+	font-size: 100px;
+	text-align: center;	
+	font-weight: bold;
+	}
+	
+.subtitulo{
+	font-family: "Wildy-Sans";
+	color: #455827;
+	font-size: 90px;
+	text-align: center;	
+	}
+	
+.tables{
+	text-align: center; 
+	font-size: 25px;
+	color:#1E4E20;          
+	font-family: "pfont";
+	font-weight: bold;
+}
+
+.marquee{
+	height: 400px;
+	width: 600px;
+}
+
+.botones{
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+}
+
+.tablas{
+	height:270px;
+	width:290px;
+}
+
+.imagenes{
+	height:500px;
+	width:700px;
+	border:5px solid #A8C68B   ;
+}
+
+@font-face{
+	font-family: LEAFLETS;
+	src: url(../fuentes/LEAFLETS.ttf);
+}		
+
+@font-face{
+	font-family: Wildy-Sans;
+	src: url(../fuentes/Wildy-Sans.ttf);
+}		
+
+@font-face{
+	font-family: pfont;
+	src: url(../fuentes/pfont.ttf);
+}
+
+@font-face{
+	font-family: no;
+	src: url(../fuentes/no.otf);
+}
+
+*{
+margin:0px;
+padding: 0px;
+}
+div#top{
+	width: 70%;
+	/*height: 400px;*/
+	background-color: #C9E7C8 ;
+	border-radius: 30px;
+	background-image:url("../imagenes/fondo.jpg");
+}
+
+div#principal{
+	margin: auto;
+	margin-top: 20px;
+	width:85%;
+	/*height: 400px;*/
+	background-image: linear-gradient(#A4D2A3, #BEE9BD );
+	border-radius: 30px;
+}
+
+div#piee{
+	width: 55%;
+	/*height: 400px;*/
+	background-color: #A8C68B;
+	margin-top: 20px;
+	border-radius: 30px;
+}
+
+div#boton{
+	margin:auto;
+	margin-top: 15px;
+	width:60%;
+	height:110px;
+	background-image:url("../imagenes/fondo.jpg");
+	border-radius: 30px;
+}
+
+.caja{
+	height:410px;
+	width:310px;
+	background:#A4D2A3;
+	border:1px solid #A8C68B ;
+	margin:5px; 
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+
+.caja:hover{
+	box-shadow:0 0 10px #515650;
+	transform:scale(1.3);
+}
+
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:50px;
+	color:#1E4E20;
+	font-weight:bold;
+	font-family:"pfont";
+}
+
+.texto-adicional{
+	padding-top:5px;
+	font-size:25px;
+	font-family:"pfont";
+}
+
+.carrousel{
+    width: 500px;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+/*
+#itemCarrousel-1{
+    background-color: red;
+}
+
+#itemCarrousel-2{
+    background-color:blue;
+}
+
+#itemCarrousel-3{
+    background-color: green;
+}
+#itemCarrousel-4{
+    background-color: purple;
+}
+*/
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 32px;
+    color: grey;
+}
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+.descripcion{
+	color:#455827;          
+	font-family: "pfont";
+	text-align:center;
+	background-color: #A8C68B;
+	font-size: 25px;
+	width: 50%;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+.botones:hover{
+	box-shadow: 0 0 20px white;
+	transform: scale(1.5);
+	color: grey;
+}
+
